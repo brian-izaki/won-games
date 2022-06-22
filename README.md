@@ -64,3 +64,4 @@ Temas centrais abordados no projeto
 
 ## Referências
 
+- [husky](https://typicode.github.io/husky/#/): commit lint
