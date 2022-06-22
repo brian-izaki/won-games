@@ -1,3 +1,38 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  // para o eslint saber a versão do react
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "react-hooks"],
+  "rules": {
+    // para regras dos hooks do react (está ligado com o react-hooks do plugins de cima)
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    // para não ter conflito com o prop types default
+    "react/prop-types": "off",
+    // como o react é global no Next, pode desabilitar ele. ele já vem nos recommended
+    "react/react-in-jsx-scope": "off",
+    // para evitar tipagem quando o typescript já consegue descobrir o tipo.
+    "@typescript-eslint/explicit-module-boudary-types": "off"
+  }
 }
