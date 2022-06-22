@@ -1,0 +1,8 @@
+{
+  // diz pra não usar o padrão do vscode
+  "editor.formatOnSave": false,
+  // diz pra usar o do formatador do eslint
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
