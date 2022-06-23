@@ -3,11 +3,12 @@
 ## Sumário
 - [Conteúdos](#conteúdos)
   - [Typescript](#typescript)
-- [Referências](#referências)
+  - [Testes](#testes)
 - [Desenvolvimento](#desenvolvimento)
   - [Setup](#setup)
   - [Iniciar Projeto](#iniciar-projeto)
   - [Outros scripts](#outros-scripts)
+- [Referências](#referências)
 
 ---
 
@@ -22,6 +23,25 @@ Temas centrais abordados no projeto
 <summary>Conteúdo visto</summary>
 
 - topico 1
+---
+</details>
+<br>
+
+
+### Testes
+
+<details>
+<summary>Conteúdo</summary>
+
+#### jest
+
+- lib responsável pelos testes
+- `jest --bail`: faz os testes pararem no primeiro que der falha. Caso contrário ele continuaria todos os testes
+
+
+#### testing-library
+
+- lib reponsável por renderizar os componentes do React
 ---
 </details>
 <br>
