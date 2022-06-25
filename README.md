@@ -1,4 +1,5 @@
 # Curso react Avançado
+Aplicação SSR de um site de e-commerce de jogos.
 
 ## Sumário
 - [Conteúdos](#conteúdos)
