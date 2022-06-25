@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    // a minha base pros imports será o src
+    "baseUrl": "src",
     "target": "es5",
     "lib": [
       "dom",
