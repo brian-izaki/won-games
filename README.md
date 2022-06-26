@@ -7,6 +7,7 @@ Aplicação SSR de um site de e-commerce de jogos.
   - [Typescript](#typescript)
   - [Testes](#testes)
   - [StoryBook](#storybook)
+  - [Plop](#Plop)
 - [Arquitetura do projeto](#arquitetura-do-projeto)
 - [Padrões utilizados](#padrões-utilizados)
 - [Desenvolvimento](#desenvolvimento)
@@ -88,6 +89,20 @@ Nele que fazemos a renderização do componente, podemos:
 
 - setar parametros iniciais pro componente
 - criar diferentes versões de layout
+
+---
+</details>
+<br>
+
+### Plop (gerador de boilerplates)
+
+<details>
+<summary>Conteúdo</summary>
+É uma lib utilizada para automatizar a crição de arquivos. <br>
+Ex: um componente neste projeto necessita do index, stories, test e styles, a ideia do plop é gerar esses arquivos boilerplate.
+
+- os templates a serem gerados utilizam um arquivo `.hbs` (handlebars) como modelo. [ver templates](./generators/templates/)
+- o arquivo que orienta quais templates existem é o [plopfile.js](./generators/plopfile.js)
 
 ---
 </details>
@@ -179,6 +194,12 @@ Nele que fazemos a renderização do componente, podemos:
   ```bash
   yarn build
   ```
+
+- Gerar arquivos boilerplate
+  ```bash
+  yarn generate
+  ```
+  - deve responder os inputs com as informações pra preencher nos arquivos gerados
 ---
 
 ## Referências
@@ -186,3 +207,4 @@ Nele que fazemos a renderização do componente, podemos:
 - [husky](https://typicode.github.io/husky/#/): commit lint
 - [storybook](https://storybook.js.org/docs/react/get-started/introduction)
   - [decorators](https://storybook.js.org/docs/react/writing-stories/decorators#gatsby-focus-wrapper)
+- [plop](https://plopjs.com/)
