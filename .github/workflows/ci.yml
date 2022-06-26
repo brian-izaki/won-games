@@ -15,7 +15,7 @@ jobs:
           node-versions: 16.x
 
       - name: Install dependencies
-        run: yarn install
+        run: yarn add
 
       - name: Linting
         run: yarn lint
