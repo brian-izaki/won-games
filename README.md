@@ -2,6 +2,7 @@
 Aplicação SSR de um site de e-commerce de jogos.
 
 ## Sumário
+- [Utlizando o boilerplate](#)
 - [Conteúdos](#conteúdos)
   - [Typescript](#typescript)
   - [Testes](#testes)
@@ -13,6 +14,16 @@ Aplicação SSR de um site de e-commerce de jogos.
   - [Iniciar Projeto](#iniciar-projeto)
   - [Outros scripts](#outros-scripts)
 - [Referências](#referências)
+
+---
+
+## Utilizando o boilerplate
+
+Para baixar este setup de projeto, use o seguinte comando:
+
+```bash
+yarn create next-app -e https://github.com/brian-izaki/won-games-boilerplate
+```
 
 ---
 
