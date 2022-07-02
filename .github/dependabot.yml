@@ -5,7 +5,16 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
+  - package-ecosystem: "npm" # See documentation for possible value
     directory: "/" # Location of package manifests
     schedule:
       interval: "monthly"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "next"
+        update-types: ["version-update:semver-patch"]
+      - dependency-name: "react"
+        update-types: ["version-update:semver-patch"]
+      - dependency-name: "react-dom"
+        update-types: ["version-update:semver-patch"]
